@@ -22,8 +22,8 @@ app.use(methodOverride("_method"));
 // Morgan for logging HTTP requests
 app.use(morgan('dev'));
 
-app.get('/', (req, res) => {
-  res.send('hello friend')
+app.get('/', async(req, res) => {
+  res.render('index.ejs')
 })
 
 app.listen(port, () => {
