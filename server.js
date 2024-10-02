@@ -22,7 +22,7 @@ app.use(methodOverride("_method"));
 // Morgan for logging HTTP requests
 app.use(morgan('dev'));
 
-app.get('/', async(req, res) => {
+app.get('/', async(req, res) => { //hompage
   res.render('index.ejs')
 })
 
